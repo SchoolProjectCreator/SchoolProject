@@ -1,0 +1,221 @@
+[debug] [2025-06-14T13:40:45.916Z] ----------------------------------------------------------------------
+[debug] [2025-06-14T13:40:45.923Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kenneth\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-14T13:40:45.924Z] CLI Version:   14.7.0
+[debug] [2025-06-14T13:40:45.924Z] Platform:      win32
+[debug] [2025-06-14T13:40:45.925Z] Node Version:  v22.16.0
+[debug] [2025-06-14T13:40:45.926Z] Time:          Sat Jun 14 2025 21:40:45 GMT+0800 (Philippine Standard Time)
+[debug] [2025-06-14T13:40:45.926Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-14T13:40:45.950Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-14T13:40:45.951Z] > authorizing via signed-in user (arenabrakout8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kenneth\OneDrive\Desktop\test4
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-06-14T13:41:32.833Z] Checked if tokens are valid: true, expires at: 1749911308703
+[debug] [2025-06-14T13:41:32.834Z] Checked if tokens are valid: true, expires at: 1749911308703
+[debug] [2025-06-14T13:41:32.836Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-06-14T13:41:32.836Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"microfinancingSystem","name":"SchoolWork"}
+[debug] [2025-06-14T13:41:33.835Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2025-06-14T13:41:33.835Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2025-06-14T13:41:33.993Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\kenneth\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\kenneth\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2025-06-14T13:42:19.788Z] ----------------------------------------------------------------------
+[debug] [2025-06-14T13:42:19.793Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kenneth\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-14T13:42:19.793Z] CLI Version:   14.7.0
+[debug] [2025-06-14T13:42:19.794Z] Platform:      win32
+[debug] [2025-06-14T13:42:19.794Z] Node Version:  v22.16.0
+[debug] [2025-06-14T13:42:19.794Z] Time:          Sat Jun 14 2025 21:42:19 GMT+0800 (Philippine Standard Time)
+[debug] [2025-06-14T13:42:19.795Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-14T13:42:19.828Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-14T13:42:19.828Z] > authorizing via signed-in user (arenabrakout8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kenneth\OneDrive\Desktop\test4
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-06-14T13:42:29.206Z] Checked if tokens are valid: true, expires at: 1749911308703
+[debug] [2025-06-14T13:42:29.206Z] Checked if tokens are valid: true, expires at: 1749911308703
+[debug] [2025-06-14T13:42:29.208Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-06-14T13:42:29.884Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-06-14T13:42:29.884Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project loanlens-5krfk (LoanLens) 
+[info] 
+=== Hosting Setup
+[debug] [2025-06-14T13:42:41.319Z] Checked if tokens are valid: true, expires at: 1749911308703
+[debug] [2025-06-14T13:42:41.319Z] Checked if tokens are valid: true, expires at: 1749911308703
+[debug] [2025-06-14T13:42:41.320Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/loanlens-5krfk [none]
+[debug] [2025-06-14T13:42:41.665Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/loanlens-5krfk 200
+[debug] [2025-06-14T13:42:41.665Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/loanlens-5krfk {"projectId":"loanlens-5krfk","projectNumber":"964536992535","displayName":"LoanLens","name":"projects/loanlens-5krfk","resources":{"hostingSite":"loanlens-5krfk"},"state":"ACTIVE","etag":"1_9ae6787f-1453-40d3-b8d3-782bf8b856e9"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-06-14T13:43:12.901Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-06-14T13:43:12.970Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-06-14T13:43:12.970Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.9.1","browserURL":"https://www.gstatic.com/firebasejs/11.9.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.9.1/firebase.tgz"},"live":{"version":"11.9","browserURL":"https://www.gstatic.com/firebasejs/live/11.9/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.9/firebase.tgz"},"components":{"ai":"https://www.gstatic.com/firebasejs/11.9.1/firebase-ai.js","analytics":"https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.9.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.9.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.9.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.9.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.9.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.9.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.9.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.9.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.9.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.9.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.9.1/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.9.1/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.memory.js"}}
+[info] +  Wrote host/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\kenneth\OneDrive\Desktop\test4 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=737498612&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-06-14T13:43:26.390Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2025-06-14T13:43:26.391Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2025-06-14T13:43:26.842Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2025-06-14T13:43:26.842Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2025-06-14T13:43:26.851Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2025-06-14T13:43:27.318Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2025-06-14T13:43:27.318Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"SchoolProjectCreator","id":216289895,"node_id":"U_kgDODORSZw","avatar_url":"https://avatars.githubusercontent.com/u/216289895?v=4","gravatar_id":"","url":"https://api.github.com/users/SchoolProjectCreator","html_url":"https://github.com/SchoolProjectCreator","followers_url":"https://api.github.com/users/SchoolProjectCreator/followers","following_url":"https://api.github.com/users/SchoolProjectCreator/following{/other_user}","gists_url":"https://api.github.com/users/SchoolProjectCreator/gists{/gist_id}","starred_url":"https://api.github.com/users/SchoolProjectCreator/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/SchoolProjectCreator/subscriptions","organizations_url":"https://api.github.com/users/SchoolProjectCreator/orgs","repos_url":"https://api.github.com/users/SchoolProjectCreator/repos","events_url":"https://api.github.com/users/SchoolProjectCreator/events{/privacy}","received_events_url":"https://api.github.com/users/SchoolProjectCreator/received_events","type":"User","user_view_type":"private","site_admin":false,"name":"SchoolCreator","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":"New To coding","twitter_username":null,"notification_email":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2025-06-14T10:41:39Z","updated_at":"2025-06-14T10:42:19Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as SchoolProjectCreator 
+[info] 
+[debug] [2025-06-14T13:44:15.162Z] >>> [apiv2][query] GET https://api.github.com/repos/firebase emulators:start/actions/secrets/public-key type=owner
+[debug] [2025-06-14T13:44:15.604Z] <<< [apiv2][status] GET https://api.github.com/repos/firebase emulators:start/actions/secrets/public-key 404
+[debug] [2025-06-14T13:44:15.605Z] <<< [apiv2][body] GET https://api.github.com/repos/firebase emulators:start/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-06-14T13:45:22.408Z] >>> [apiv2][query] GET https://api.github.com/repos/SchoolProjectCreator/webpage-demo/actions/secrets/public-key type=owner
+[debug] [2025-06-14T13:45:22.807Z] <<< [apiv2][status] GET https://api.github.com/repos/SchoolProjectCreator/webpage-demo/actions/secrets/public-key 404
+[debug] [2025-06-14T13:45:22.807Z] <<< [apiv2][body] GET https://api.github.com/repos/SchoolProjectCreator/webpage-demo/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-06-14T13:46:47.626Z] >>> [apiv2][query] GET https://api.github.com/repos/SchoolProjectCreator/SchoolProject.git/actions/secrets/public-key type=owner
+[debug] [2025-06-14T13:46:48.058Z] <<< [apiv2][status] GET https://api.github.com/repos/SchoolProjectCreator/SchoolProject.git/actions/secrets/public-key 404
+[debug] [2025-06-14T13:46:48.059Z] <<< [apiv2][body] GET https://api.github.com/repos/SchoolProjectCreator/SchoolProject.git/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-06-14T13:50:12.778Z] ----------------------------------------------------------------------
+[debug] [2025-06-14T13:50:12.786Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kenneth\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-14T13:50:12.787Z] CLI Version:   14.7.0
+[debug] [2025-06-14T13:50:12.787Z] Platform:      win32
+[debug] [2025-06-14T13:50:12.788Z] Node Version:  v22.16.0
+[debug] [2025-06-14T13:50:12.788Z] Time:          Sat Jun 14 2025 21:50:12 GMT+0800 (Philippine Standard Time)
+[debug] [2025-06-14T13:50:12.789Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-14T13:50:12.818Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-14T13:50:12.819Z] > authorizing via signed-in user (arenabrakout8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kenneth\OneDrive\Desktop\test4
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-06-14T13:50:51.667Z] Checked if tokens are valid: true, expires at: 1749911308703
+[debug] [2025-06-14T13:50:51.667Z] Checked if tokens are valid: true, expires at: 1749911308703
+[debug] [2025-06-14T13:50:51.669Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-06-14T13:50:51.669Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"FinalProject","name":"SchoolWork"}
+[debug] [2025-06-14T13:50:52.683Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2025-06-14T13:50:52.683Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2025-06-14T13:50:52.821Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\kenneth\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\kenneth\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2025-06-14T13:52:08.458Z] ----------------------------------------------------------------------
+[debug] [2025-06-14T13:52:08.465Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kenneth\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-14T13:52:08.466Z] CLI Version:   14.7.0
+[debug] [2025-06-14T13:52:08.466Z] Platform:      win32
+[debug] [2025-06-14T13:52:08.467Z] Node Version:  v22.16.0
+[debug] [2025-06-14T13:52:08.468Z] Time:          Sat Jun 14 2025 21:52:08 GMT+0800 (Philippine Standard Time)
+[debug] [2025-06-14T13:52:08.468Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-14T13:52:08.501Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-14T13:52:08.502Z] > authorizing via signed-in user (arenabrakout8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kenneth\OneDrive\Desktop\test4
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-06-14T13:52:41.769Z] Checked if tokens are valid: true, expires at: 1749911308703
+[debug] [2025-06-14T13:52:41.769Z] Checked if tokens are valid: true, expires at: 1749911308703
+[debug] [2025-06-14T13:52:41.771Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-06-14T13:52:41.771Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"Kingina","name":"kinmgina122"}
+[debug] [2025-06-14T13:52:42.878Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2025-06-14T13:52:42.879Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2025-06-14T13:52:43.018Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\kenneth\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\kenneth\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
