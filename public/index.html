@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Microfinance Information System</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    }
+    .container {
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+      border: 1px solid #e0eafc;
+      background: rgba(255,255,255,0.95);
+    }
+    h1 {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 2.5em;
+      color: #007bff;
+      letter-spacing: 1px;
+      margin-bottom: 0.5em;
+    }
+    .summary-section {
+      background: #f0f8ff;
+      border: 1px solid #b6d4fe;
+      color: #007bff;
+      font-size: 1.2em;
+      margin-bottom: 2em;
+    }
+    .add-client-section, .admin-section {
+      background: #f8fafc;
+      border-radius: 8px;
+      padding: 1.5em 1em;
+      margin-bottom: 2em;
+      border: 1px solid #e3e3e3;
+    }
+    .add-client-section h2, .admin-section h2 {
+      color: #0056b3;
+      margin-bottom: 1em;
+    }
+    .client-list-section h2 {
+      color: #007bff;
+      margin-bottom: 1em;
+    }
+    table {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    th {
+      background: #e9f5ff;
+      color: #007bff;
+      font-weight: 600;
+    }
+    tr:hover {
+      background: #f0f8ff;
+    }
+    button, input[type="submit"] {
+      background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      border-radius: 4px;
+      padding: 0.5em 1.2em;
+      margin-top: 0.5em;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+    }
+    button:hover, input[type="submit"]:hover {
+      background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+      box-shadow: 0 4px 16px rgba(0,123,255,0.12);
+    }
+    input[type="text"], input[type="number"], input[type="email"] {
+      background: #f8fafc;
+      border: 1px solid #b6d4fe;
+      border-radius: 4px;
+      padding: 0.5em;
+      font-size: 1em;
+      margin-bottom: 0.5em;
+    }
+    @media (max-width: 700px) {
+      h1 { font-size: 1.5em; }
+      .container { padding: 0.5em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Microfinance Information System</h1>
+    <section class="summary-section">
+      <h2>Summary</h2>
+      <div id="summary">
+        <span id="clientCount">Clients: 0</span> |
+        <span id="totalLoan">Total Loan: $0</span> |
+        <span id="totalOutstanding">Total Outstanding: $0</span>
+      </div>
+    </section>
+    <section class="add-client-section">
+      <h2>Add New Client</h2>
+      <form id="clientForm">
+        <input type="text" id="name" placeholder="Client Name" required>
+        <input type="number" id="loan" placeholder="Loan Amount" required>
+        <input type="email" id="email" placeholder="Email (optional)">
+        <input type="text" id="phone" placeholder="Phone (optional)">
+        <button type="submit">Add Client</button>
+      </form>
+    </section>
+    <section class="search-section">
+      <input type="text" id="search" placeholder="Search by name">
+    </section>
+    <section class="client-list-section">
+      <h2>Clients</h2>
+      <table id="clientTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Loan</th>
+            <th>Repaid</th>
+            <th>Outstanding</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Created</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="clientTableBody">
+          <!-- Clients will be rendered here -->
+        </tbody>
+      </table>
+    </section>
+    <section class="admin-section">
+      <h2>Admin</h2>
+      <button id="backupBtn">Backup Clients</button>
+      <a id="downloadBackupBtn" href="/api/backup/download" download style="display:none;">Download Backup</a>
+      <button id="restoreBtn">Restore Clients</button>
+      <input type="file" id="restoreFileInput" accept="application/json" style="display:inline-block;margin-top:1em;">
+      <button id="restoreFileBtn">Restore from File</button>
+      <div id="adminMsg" style="margin-top:1em;color:green;"></div>
+    </section>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
